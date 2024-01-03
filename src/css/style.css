@@ -1,0 +1,187 @@
+body {
+	background: linear-gradient(275deg, #fafaeb, #d5ebda);
+	background-size: 400% 400%;
+	-webkit-animation: BgGradientAnimate 20s ease-in-out infinite;
+	-moz-animation: BgGradientAnimate 20s ease-in-out infinite;
+	-o-animation: BgGradientAnimate 20s ease-in-out infinite;
+	animation: BgGradientAnimate 20s ease-in-out infinite;
+}
+p,
+a,
+h3,
+h4,
+h5 {
+	font-family: sans-serif;
+	color: #333738;
+}
+header nav.navbar {
+	border-radius: 0 0 15px 15px;
+	background-color: rgba(255, 255, 255, 0.45);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(30px);
+}
+header nav.navbar .brand h3 {
+	color: #7ee395;
+	font-weight: 800;
+}
+header nav.navbar ul li,
+header nav.navbar ul li a {
+	list-style-type: none;
+	text-decoration: none;
+}
+header nav.navbar ul li a:hover {
+	color: #7ee395;
+}
+input {
+	border-radius: 15px !important;
+	border: 1px solid rgba(255, 255, 255, 0.25) !important;
+	background-color: rgba(255, 255, 255, 0.45) !important;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25) !important;
+	backdrop-filter: blur(15px) !important;
+}
+section.hero .card {
+	border-radius: 15px !important;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.45);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(15px);
+}
+a.btn,
+a.btn:active {
+	background-color: #7ee395 !important;
+	color: white !important;
+}
+section.hero img#img-hero {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 17px solid #d5ebda;
+}
+section.meal-description .card {
+	border-radius: 15px !important;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.45);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(15px);
+}
+section.meal-description .meal-desc-img {
+	max-width: 300px;
+	max-height: 250px;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+section.meal-description .desc p.card-text {
+	text-align: justify;
+}
+#description-card {
+	animation: fadeInUp 0.5s ease-in-out;
+}
+footer {
+	border-radius: 15px 15px 0px 0px;
+	background-color: rgba(255, 255, 255, 0.45);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(30px);
+}
+
+@media only screen and (min-width: 768px) {
+	section.hero .card {
+		border-radius: 15px 175px 175px 15px !important;
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		background-color: rgba(255, 255, 255, 0.45);
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+		backdrop-filter: blur(15px);
+	}
+	section.hero .card .card-body a {
+		width: 170px;
+	}
+}
+@media only screen and (max-width: 425px) {
+	a,
+	p {
+		font-size: 15px !important;
+	}
+	section.hero img#img-hero {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		border: 17px solid #d5ebda;
+	}
+	section.hero .card .card-body {
+		padding-bottom: 15px !important;
+	}
+	section.meal-description .card .card-body img.meal-desc-img {
+		width: 100%;
+		border-radius: 15px;
+		margin: 0 auto;
+	}
+}
+@-webkit-keyframes BgGradientAnimate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes BgGradientAnimate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-o-keyframes BgGradientAnimate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes BgGradientAnimate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #fafaeb;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #7ee395;
+	border-radius: 7px;
+}
